@@ -78,7 +78,7 @@ fun toplama(sayi1: Int, sayi2: Int) {
 // mini hesap makinesi için menu olusturuldu.
 fun menuSec(): Int {
 
-    var tarih = tarihGoster()
+    var tarih = tarihGoster() // tanımlanan fonksiyon çağrıldı.
 
     println("----------- MENU  $tarih ------------")
     println("1 - Topla")
@@ -95,12 +95,13 @@ fun menuSec(): Int {
 
 }
 
+// tarih bilgilerini ekranda gostermek için bir fonksiyon tanımlandı.
 fun tarihGoster(): String {
 
-    val calendar = Calendar.getInstance()
-    var saat = calendar.get(Calendar.HOUR)
-    var dakika = calendar.get(Calendar.MINUTE)
-    var saniye = calendar.get(Calendar.SECOND)
+    val calendar = Calendar.getInstance() // takvim
+    var saat = calendar.get(Calendar.HOUR) // saat
+    var dakika = calendar.get(Calendar.MINUTE) // dakika
+    var saniye = calendar.get(Calendar.SECOND) // saniye
 
-    return "$saat:$dakika:$saat"
+    return "$saat:$dakika:$saniye"
 }
