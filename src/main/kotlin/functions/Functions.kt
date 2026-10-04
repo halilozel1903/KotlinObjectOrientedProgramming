@@ -9,7 +9,7 @@ package functions
  */
 fun main() {
     println("Main metodu : ${add(first = 12, second = 34)}")
-    println("Merhabalar ${name("Halil")}")
+    println("Merhabalar ${personName("Halil")}")
 
     print("Faktoriyeli hesaplanacak değeri giriniz : ")
     val number = readln().toInt()
@@ -23,8 +23,8 @@ fun add(first: Int, second: Int): Int {
     return total
 }
 
-/** Returns the given name. Short functions can use an expression body. */
-fun name(value: String): String = value
+/** Returns the given person name. Short functions can use an expression body. */
+fun personName(value: String): String = value
 
 /**
  * Calculates `n!` with an iterative loop.

@@ -7,8 +7,8 @@ import kotlin.test.assertNotEquals
 class DataAndSealedClassesTest {
     @Test
     fun `data class copy and equality`() {
-        val original = User(id = 1, name = "Halil", email = "halil@example.com")
-        val renamed = original.copy(name = "Halil Ozel")
+        val original = User(id = 1, name = "Alex", email = "alex@example.com")
+        val renamed = original.copy(name = "Alex Smith")
 
         assertEquals(original.id, renamed.id)
         assertEquals(original.email, renamed.email)

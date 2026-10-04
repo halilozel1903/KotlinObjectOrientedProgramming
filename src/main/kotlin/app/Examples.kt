@@ -18,6 +18,9 @@ fun main() {
           ./gradlew runClasses        Classes, constructors, and properties
           ./gradlew runInheritance    Inheritance, interfaces, and polymorphism
           ./gradlew runDataClasses    Data classes, value classes, and sealed types
+          ./gradlew runScopeFunctions Scope functions (let, run, with, apply, also)
+          ./gradlew runDelegation     Interface and property delegation
+          ./gradlew runNestedClasses  Nested and inner classes
 
         Or run the compiled classes directly after `./gradlew classes`.
         """.trimIndent()
