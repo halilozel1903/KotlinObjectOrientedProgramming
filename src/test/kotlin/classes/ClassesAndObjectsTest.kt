@@ -21,8 +21,8 @@ class ClassesAndObjectsTest {
 
     @Test
     fun `secondary constructor splits a full name`() {
-        val person = Person("Yusuf Efe")
-        assertEquals("Yusuf", person.firstName)
-        assertEquals("Efe", person.lastName)
+        val person = Person("Jordan Lee")
+        assertEquals("Jordan", person.firstName)
+        assertEquals("Lee", person.lastName)
     }
 }

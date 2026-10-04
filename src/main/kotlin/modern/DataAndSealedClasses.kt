@@ -8,8 +8,8 @@ package modern
  * and closed hierarchies that `when` can check exhaustively.
  */
 fun main() {
-    val original = User(id = 1, name = "Halil", email = "halil@example.com")
-    val renamed = original.copy(name = "Halil Ozel")
+    val original = User(id = 1, name = "Alex", email = "alex@example.com")
+    val renamed = original.copy(name = "Alex Smith")
     val (id, name, email) = renamed
     println("User $id: $name <$email>")
     println("original == renamed: ${original == renamed}")

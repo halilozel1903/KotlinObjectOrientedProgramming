@@ -13,15 +13,15 @@ fun main() {
     val magazine = Magazine()
     magazine.showInformation()
 
-    val player = FootballPlayer(name = "Halil", age = 22, team = "Turkey")
+    val player = FootballPlayer(name = "Alex", age = 22, team = "City FC")
     println("${player.name} plays for ${player.team}")
 
     val circle = Circle(radius = 6.0)
     println("Circumference: ${circle.circumference}")
     println("Area: ${circle.area}")
 
-    val fromParts = Person(firstName = "Halil", lastName = "Ozel")
-    val fromFullName = Person("Yusuf Efe")
+    val fromParts = Person(firstName = "Alex", lastName = "Smith")
+    val fromFullName = Person("Jordan Lee")
     fromParts.showInformation()
     fromFullName.showInformation()
 }

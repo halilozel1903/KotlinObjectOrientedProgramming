@@ -11,8 +11,8 @@ class FunctionsTest {
     }
 
     @Test
-    fun `name returns the given value`() {
-        assertEquals("Halil", name("Halil"))
+    fun `personName returns the given value`() {
+        assertEquals("Alex", personName("Alex"))
     }
 
     @Test
