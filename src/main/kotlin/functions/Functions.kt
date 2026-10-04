@@ -8,18 +8,18 @@ package functions
  * console input instead of the older `readLine()!!` idiom.
  */
 fun main() {
-    println("Main function: ${add(first = 12, second = 34)}")
-    println("Hello, ${personName("Alex")}")
+    println("Main metodu : ${add(first = 12, second = 34)}")
+    println("Merhabalar ${personName("Halil")}")
 
-    print("Enter a number to calculate its factorial: ")
+    print("Faktoriyeli hesaplanacak değeri giriniz : ")
     val number = readln().toInt()
-    println("$number! = ${factorial(number)}")
+    println("$number faktoriyeli : ${factorial(number)}")
 }
 
 /** Returns the sum of [first] and [second]. */
 fun add(first: Int, second: Int): Int {
     val total = first + second
-    println("add() result: $total")
+    println("Toplam metodu : $total")
     return total
 }
 

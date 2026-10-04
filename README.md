@@ -2,12 +2,24 @@
 
 A small course project that introduces object-oriented programming constructs in **Kotlin**.
 
-The original examples taught functions, a menu-driven calculator, and method overloading. Those lessons are still here. They now use current Kotlin idioms, English identifiers and comments, and a Gradle build on **Kotlin 2.4.20** (K2 compiler) with **JDK 21**. Extra lessons cover classes, inheritance, and modern Kotlin types such as data classes and sealed interfaces.
+The original examples taught functions, a menu-driven calculator, and method overloading. Those lessons are still here. They now use current Kotlin idioms, English source names, and a Gradle build on **Kotlin 2.4.20** (K2 compiler) with **JDK 21**. Extra lessons cover classes, inheritance, and modern Kotlin types such as data classes and sealed interfaces.
+
+## Code naming and lesson language
+
+- **Identifiers** (packages, files, classes, functions, and Gradle run tasks) are in **English**.
+- **Console text** in the three original lessons (`runFunctions`, `runCalculator`, `runOverloading`) stays in **Turkish**, matching the classroom examples.
+- Newer OOP lessons (`runClasses`, `runInheritance`, `runDataClasses`) use English console output.
+
+| Former source (Turkish file names) | Current lesson | Gradle task |
+| --- | --- | --- |
+| `Fonksiyonlar.kt` | [Functions](src/main/kotlin/functions/Functions.kt) | `./gradlew runFunctions` |
+| `FonksiyonlarOrnek.kt` | [Calculator](src/main/kotlin/calculator/Calculator.kt) | `./gradlew runCalculator` |
+| `MetodOverloading.kt` | [Method overloading](src/main/kotlin/overloading/MethodOverloading.kt) | `./gradlew runOverloading` |
 
 ## Requirements
 
 - JDK 21 or newer (the Gradle toolchain downloads it if needed)
-- No local Gradle install is required; use the wrapper
+- No local Gradle install is required; the wrapper uses **Gradle 9.8.0**
 
 ## Build and test
 

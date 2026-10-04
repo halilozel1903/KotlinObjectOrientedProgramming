@@ -6,10 +6,6 @@ plugins {
 group = "com.halilozel"
 version = "2.0.0"
 
-repositories {
-    mavenCentral()
-}
-
 kotlin {
     jvmToolchain(21)
     compilerOptions {
