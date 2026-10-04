@@ -49,3 +49,6 @@ registerExample("runOverloading", "overloading.MethodOverloadingKt", "Run the me
 registerExample("runClasses", "classes.ClassesAndObjectsKt", "Run the classes and objects lesson")
 registerExample("runInheritance", "inheritance.InheritanceAndInterfacesKt", "Run the inheritance lesson")
 registerExample("runDataClasses", "modern.DataAndSealedClassesKt", "Run the data and sealed classes lesson")
+registerExample("runScopeFunctions", "scope.ScopeFunctionsKt", "Run the scope functions lesson")
+registerExample("runDelegation", "delegation.DelegationKt", "Run the delegation lesson")
+registerExample("runNestedClasses", "nested.NestedClassesKt", "Run the nested and inner classes lesson")
