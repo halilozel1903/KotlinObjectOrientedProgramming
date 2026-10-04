@@ -7,7 +7,7 @@ The original examples taught functions, a menu-driven calculator, and method ove
 ## Requirements
 
 - JDK 21 or newer (the Gradle toolchain downloads it if needed)
-- No local Gradle install is required; use the wrapper
+- No local Gradle install is required; the wrapper uses **Gradle 9.8.0**
 
 ## Build and test
 
