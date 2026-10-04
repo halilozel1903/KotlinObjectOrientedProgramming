@@ -19,27 +19,27 @@ fun main() {
     sum(numbers)
 
     // Named arguments and a default parameter can stand in for extra overloads.
-    println("Sum with defaults: ${sumWithDefaults(first = 10, second = 5)}")
+    println("Varsayılanlarla toplam : ${sumWithDefaults(first = 10, second = 5)}")
 }
 
 fun sum(numbers: Array<Int>) {
-    println("Sum: ${numbers.sum()}")
+    println("Toplamı : ${numbers.sum()}")
 }
 
 fun sum(first: Int, second: Int) {
-    println("Sum: ${first + second}")
+    println("toplamları : ${first + second}")
 }
 
 fun sum(first: Double, second: Double) {
-    println("Sum: ${first + second}")
+    println("toplamları : ${first + second}")
 }
 
 fun sum(first: Int, second: Int, third: Int) {
-    println("Sum: ${first + second + third}")
+    println("toplamları : ${first + second + third}")
 }
 
 fun sum(first: Int, second: Int, third: Int, fourth: Int) {
-    println("Sum: ${first + second + third + fourth}")
+    println("toplamları : ${first + second + third + fourth}")
 }
 
 /**
@@ -47,7 +47,7 @@ fun sum(first: Int, second: Int, third: Int, fourth: Int) {
  * parameter behaves like an [IntArray].
  */
 fun sumAll(vararg values: Int) {
-    println("Sum: ${values.sum()}")
+    println("Toplamlar : ${values.sum()}")
 }
 
 fun sumWithDefaults(first: Int, second: Int, third: Int = 0, fourth: Int = 0): Int =

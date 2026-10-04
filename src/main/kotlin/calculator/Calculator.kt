@@ -15,18 +15,18 @@ fun main() {
         val choice = showMenu() ?: continue
         if (choice == MenuOption.EXIT) break
 
-        print("Enter the first number: ")
+        print("Birinci sayıyı giriniz : ")
         val first = readln().toInt()
-        print("Enter the second number: ")
+        print("İkinci sayıyı giriniz : ")
         val second = readln().toInt()
 
         when (choice) {
-            MenuOption.ADD -> println("Sum: ${add(first, second)}")
-            MenuOption.SUBTRACT -> println("Difference: ${subtract(first, second)}")
-            MenuOption.MULTIPLY -> println("Product: ${multiply(first, second)}")
+            MenuOption.ADD -> println("Sayıların toplamı : ${add(first, second)}")
+            MenuOption.SUBTRACT -> println("Sayıların cikarimi : ${subtract(first, second)}")
+            MenuOption.MULTIPLY -> println("Sayıların carpımı : ${multiply(first, second)}")
             MenuOption.DIVIDE -> divide(first, second)
-                ?.let { println("Quotient: $it") }
-                ?: println("Cannot divide by zero.")
+                ?.let { println("Sayıların bolumu : $it") }
+                ?: println("Bölünen sayı sıfır olamaz !!")
             MenuOption.EXIT -> Unit
         }
     }
@@ -57,17 +57,17 @@ fun divide(first: Int, second: Int): Int? =
 fun showMenu(): MenuOption? {
     val time = currentTime()
     println("----------- MENU  $time ------------")
-    println("1 - Add")
-    println("2 - Subtract")
-    println("3 - Multiply")
-    println("4 - Divide")
-    println("5 - Exit")
-    print("Your choice: ")
+    println("1 - Topla")
+    println("2 - Çıkar")
+    println("3 - Çarp")
+    println("4 - Böl")
+    println("5 - Cikis")
+    print("Seçiminiz : ")
 
     val choice = readln().toIntOrNull()
     val option = choice?.let(MenuOption::from)
     if (option == null) {
-        println("Invalid choice.")
+        println("Hatalı giriş yaptınız !!!")
     }
     return option
 }
